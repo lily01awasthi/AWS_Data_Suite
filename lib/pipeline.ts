@@ -82,7 +82,7 @@ export class PipelineStack extends cdk.Stack {
             new codepipeline_actions.CloudFormationCreateUpdateStackAction({
               actionName: 'CFN_Deploy',
               stackName: 'AwsDataSuiteStack', // CDK stack name
-              templatePath: buildOutput.atPath('MyAppStack.template.json'),
+              templatePath: buildOutput.atPath('AwsDataSuiteStack.template.json'),
               adminPermissions: true, // Ensure the stack has necessary permissions
             }),
           ],
